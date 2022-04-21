@@ -2,8 +2,11 @@
 SMTP отправка email
 
 В первую очередь в php_interface/init.php определяем функцию custom_mail (почему именно custom_mail тут https://dev.1c-bitrix.ru/api_help/main/functions/other/bxmail.php). 
- Затем устанавливаем PHPMailer (https://github.com/PHPMailer/PHPMailer) через composer
- composer require phpmailer/phpmailer
+Затем устанавливаем PHPMailer (https://github.com/PHPMailer/PHPMailer) через composer
+
+```php
+composer require phpmailer/phpmailer
+```
 
 Потом в bitrix/.settings.php дописываем параметры для отправителя
 
