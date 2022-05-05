@@ -1,5 +1,5 @@
 # bitrix.smtp
-SMTP отправка email
+SMTP отправка email. Имеет смысл использовать только с ядром версии ниже 21.900.0, потому что с версии 21.900.0 появилась отправка SMTP из коробки (https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&LESSON_ID=23612&bx_sender_conversion_id=913132382).
 
 В первую очередь в php_interface/init.php определяем функцию custom_mail (почему именно custom_mail тут https://dev.1c-bitrix.ru/api_help/main/functions/other/bxmail.php). 
 Затем устанавливаем PHPMailer (https://github.com/PHPMailer/PHPMailer) через composer
